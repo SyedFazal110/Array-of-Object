@@ -111,12 +111,14 @@ const products = [
   let div = document.querySelector("#div");
 
 
+  
 for(i=0 ; i<products.length ; i++){
-    div.innerHTML += `<div class="card cards" style="width: 18rem;">
-  <div class="card-body">
-   <h6 class="card-title text-dark">Product: ${products[i].name}</h6>
-    <h6 class="card-title text-danger">Price: ${products[i].price}$</h6>
-    <h6 class="card-text text-primary">Description: ${products[i].description}</h6>
-  </div>
-</div>`;
+    div.innerHTML += `
+    <div class="card cards" style="width: 16rem;">
+      <div class="card-body">
+       <h5 class="card-title text-dark">Product: ${products[i].name}</h5>
+       <h6 class="card-title text-danger">Price: ${products[i].price}$</h6>
+       <h7 class="card-text text-dark">Description: ${products[i].description}</h7>
+      </div>
+    </div>`;
 }
